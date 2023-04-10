@@ -14,14 +14,36 @@
     <style>
         @import url("css/all.css");
     </style>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/custom/extra.css">
+
 
 </head>
 
-<body>
+<body id="page-body">
     <!--navbar start-->
-    <div class="navbar ">
-        
+    <div class="navbar navbar-dark navbar-expand-lg fixed-top" id="mainNavbar">
+        <div class="container">
+        <a href="#page-body" class="navbar-brand text-uppercase" title="logo">logom</a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#myNavbar" aria-controls="myNavbar" aria-label="menü açma kapama butonu" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button> 
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="myNavbar" aria-labelledby="myLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="#myLabel">menü</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="kapat"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav ms-auto flex-grow-1 text-uppercase py-lg-2">
+                    <li class="nav-item"><a href="#services" class="nav-link">servisler</a></li>
+                    <li class="nav-item"><a href="#portfolio" class="nav-link">portföy</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">hakkımızda</a></li>
+                    <li class="nav-item"><a href="#team" class="nav-link">takım</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">iletisim</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>       
     </div>
     <!--navbar end-->
     <!-- header start-->
